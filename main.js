@@ -48,6 +48,14 @@ if (typeof sortByLastNameAscending === 'undefined') {
   sortByLastNameAscending = undefined;
 }
 
+if (typeof trueIsFirst === 'undefined') {
+  trueIsFirst = undefined;
+}
+
+if (typeof truesFirst === 'undefined') {
+  truesFirst = undefined;
+}
+
 
 module.exports = {
   firstNumberIsLess,
@@ -55,6 +63,7 @@ module.exports = {
   firstNameIsFirstAlphabetically,
   firstLastNameIsFirstAlphabetically,
   trueIsFirst,
+  truesFirst,
   sortByNumberAscending,
   sortByNumberDescending,
   sortByNameAscending,
