@@ -82,16 +82,16 @@ describe('firstLastNameIsFirstAlphabetically', () => {
 
 describe('trueIsFirst', () => {
   it(`returns a negative number if the first boolean is true and the second false`, () => {
-    expect(secondNumberIsLess(true, false) < 0).toBe(true)
+    expect(trueIsFirst(true, false) < 0).toBe(true)
   })
 
   it(`returns a positive number if the first boolean is false and the second true`, () => {
-    expect(secondNumberIsLess(false, true) > 0).toBe(true)
+    expect(trueIsFirst(false, true) > 0).toBe(true)
   })
 
   it(`returns 0 if the booleans are equal`, () => {
-    expect(secondNumberIsLess(true, true)).toBe(0)
-    expect(secondNumberIsLess(false, false)).toBe(0)
+    expect(trueIsFirst(true, true)).toBe(0)
+    expect(trueIsFirst(false, false)).toBe(0)
   })
 })
 
