@@ -8,26 +8,26 @@ const secondNumberIsLess = function (x,y){
   return y-x
 }
 const firstNameIsFirstAlphabetically= function(x,y){
-  if (y > x) {return -1
-  } if (x > y){
-    return 1
-  }
-  if (y === x){
-    return 0
-  }
-
+  // if (y > x) {return -1
+  // } if (x > y){
+  //   return 1
+  // }
+  // if (y === x){
+  //   return 0
+  // }
+  return y > x? -1 : (y < x ? 1 : 0)
 }
 const firstLastNameIsFirstAlphabetically = function(x,y){
     const xLastName = x.slice(x.indexOf(' ')+1)
     const yLastName = y.slice(y.indexOf(' ')+1)
-    if (xLastName > yLastName){
-      return 1
-    }if (xLastName < yLastName) {
-    return -1;
-  } else {
-    return 0;
-  }
-
+  //   if (xLastName > yLastName){
+  //     return 1
+  //   }if (xLastName < yLastName) {
+  //   return -1;
+  // } else {
+  //   return 0;
+  // }
+  return xLastName > yLastName ? 1 :(xLastName < yLastName ? -1 : 0)
 }
 const trueIsFirst = function(first,second){
   if (first === true && second ===false){
